@@ -1,0 +1,145 @@
+@font-face {
+    font-family:'Microsoft JhengHei';
+    src:url('fonts/msjhbd.ttf') format('truetype');
+}
+@font-face {
+    font-family:'DFLiSongStd-W7';
+    src:url('fonts/DFLiSongStd-W7.otf') format('opentype');
+}
+
+
+html, body{
+	width:100%;
+	height:100%;
+}
+body{
+	background-image:url('image/1920x1080_bg_2.png');
+	overflow:hidden;
+	-webkit-perspective:4000px;
+	margin:0px;
+}
+.book{
+	display:inline-block;
+	position:absolute;
+	background-color:#ffffff;
+	box-sizing:border-box;
+}
+.page{
+	position:absolute;
+	background-color:white;
+	-webkit-backface-visibility:hidden;
+}
+.page > img{
+	width:100%;
+	height:100%;
+}
+#topic{
+	position:absolute;
+	text-align:center;
+	top:80px;
+	width:100%;
+	font-family:"DFLiSongStd-W7";
+	color:#663300;
+	font-weight:bold;
+	font-size:64px;
+	z-index:100;
+}
+#bookinfo{
+	position:relative;
+	text-align:center;
+	top:55%;
+	left:20%;
+	width:60%;
+	display:none;
+}
+#title{
+	text-align:center;
+	width:100%;
+	font-family:"Microsoft JhengHei";
+	color:#663300 ;
+	/*font-weight:bold;*/
+	font-size:30px;
+}
+#author{
+	position:relative;
+	text-align:right;
+	top:8px;
+	font-family:"Microsoft JhengHei";
+	font-size:20px;
+	color:#663300 ;
+}
+#publisher{
+	position:relative;
+	text-align:right;
+	top:16px;
+	font-family:"Microsoft JhengHei";
+	font-size:15px;
+	color:#663300 ;
+}
+#description{
+	position:relative;
+	text-align:justify;
+	text-indent:36px;
+	top:32px;
+	width:100%;
+	height:200px;
+	font-family:"Microsoft JhengHei";
+	font-size:18px;
+	line-height:27px;
+	color:#303030 ;
+}
+#url{
+	position:relative;
+	top:10px;
+	text-align:right;
+	font-size:16px;
+}
+#mask{
+	background-color:black;
+	opacity:0.5;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:200;
+	width:100%;
+	height:100%;
+	display:none;
+}
+#ebook{
+	position:absolute;
+	z-index:202;
+	display:none;
+	background-color:white;
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective:4000px;
+	-webkit-perspective-origin:center bottom;
+}
+#ebook-progress-bar{
+	position:absolute;
+	display:none;
+	z-index:201;
+	text-align:center;
+}
+#ebook-progress-bar > div:first-child{
+	width:100%;
+	height:4px;
+	background-color:white;
+	border-radius:5px;
+}
+#ebook-progress-bar > div:nth-child(2){
+	width:15px;
+	height:15px;
+	border:1px solid #999999;
+	border-radius:25px;
+	background-color:white;
+	position:absolute;
+	left:-7px;
+	top:-7px;
+}
+#ebook-progress-bar > span:last-child{
+	background-color:white;
+	padding:2px 5px;
+	border-radius:5px;
+	position:relative;
+	top:10px;
+}
