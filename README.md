@@ -14,3 +14,6 @@ Chrome
 Drag to rotate/shift the bookcase.
 Double-click to enter/exit each mode.
 (Only the first few books contain pages to demo for now.)
+
+### Online Demo
+https://nizniz187.github.io/InteractiveBookcase/
