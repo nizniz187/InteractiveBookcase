@@ -27,7 +27,8 @@ var Book = {
 				div.style.backgroundColor = bgColor;
 					
 				var image = document.createElement("img");
-				image.src = "image/thumbnails/" + list[j].getAttribute("filename");
+				//image.src = "image/thumbnails/" + list[j].getAttribute("filename");
+				image.src = "image/thumbnails/BookCover.jpg";
 				
 				div.appendChild(image);
 				document.body.appendChild(div);

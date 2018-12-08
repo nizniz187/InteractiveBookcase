@@ -110,7 +110,8 @@ var EBook = {
 			
 			if(i < book.page){
 				image = document.createElement("img");
-				image.src = "image/data/" + book.data + "/" + (i + 1) + ".jpg";			
+				//image.src = "image/data/" + book.data + "/" + (i + 1) + ".jpg";
+				image.src = "image/data/demo/" + (i % 5 + 1) + ".jpg";
 				page.appendChild(image);
 			}
 			this.ebook.appendChild(page);
